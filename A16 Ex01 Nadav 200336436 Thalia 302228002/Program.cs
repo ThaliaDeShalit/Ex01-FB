@@ -11,9 +11,9 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         static void Main()
         {
             //Clipboard.SetText("Best Windows App Ever");
-            FacebookService.s_UseForamttedToStrings = true;
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+        //    FacebookService.s_UseForamttedToStrings = true;
+          //  Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainAppWindow());
         }
     }
