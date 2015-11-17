@@ -38,8 +38,9 @@
     <Reference Include="Facebook">
       <HintPath>..\..\CS\Third Year\First Semester\Design Patterns\01_FB01_BasicFacebookFeatures.V6.8.0.13\01_FB01_BasicFacebookFeatures.V6.8.0.13\FBApi\Facebook.dll</HintPath>
     </Reference>
-    <Reference Include="FbGraphApiWrapper">
-      <HintPath>..\..\CS\Third Year\First Semester\Design Patterns\01_FB01_BasicFacebookFeatures.V6.8.0.13\01_FB01_BasicFacebookFeatures.V6.8.0.13\FBApi\FbGraphApiWrapper.dll</HintPath>
+    <Reference Include="FbGraphApiWrapper, Version=6.8.0.13, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CS\Third Year\First Semester\Design Patterns\01_FB01_BasicFacebookFeatures.V6.8.0.14\01_FB01_BasicFacebookFeatures.V6.8.0.14\FBApi\FbGraphApiWrapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

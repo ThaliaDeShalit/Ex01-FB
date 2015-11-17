@@ -76,6 +76,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             // picture_CoverPhoto
             // 
             this.picture_CoverPhoto.Location = new System.Drawing.Point(12, 12);
+            this.picture_CoverPhoto.MinimumSize = new System.Drawing.Size(910, 143);
             this.picture_CoverPhoto.Name = "picture_CoverPhoto";
             this.picture_CoverPhoto.Size = new System.Drawing.Size(910, 143);
             this.picture_CoverPhoto.TabIndex = 1;
@@ -106,6 +107,8 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_About.TabIndex = 4;
             this.button_About.Text = "About";
             this.button_About.UseVisualStyleBackColor = true;
+            this.button_About.Click += new System.EventHandler(this.button_About_Click);
+
             // 
             // label_PostStatus
             // 
@@ -131,6 +134,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_Post.TabIndex = 7;
             this.button_Post.Text = "Post";
             this.button_Post.UseVisualStyleBackColor = true;
+            this.button_Post.Click += new System.EventHandler(this.button_Post_Click);
             // 
             // listBox_LikedPages
             // 
@@ -140,6 +144,8 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.listBox_LikedPages.Name = "listBox_LikedPages";
             this.listBox_LikedPages.Size = new System.Drawing.Size(170, 180);
             this.listBox_LikedPages.TabIndex = 8;
+            this.listBox_LikedPages.SelectedIndexChanged += new System.EventHandler(this.listBox_LikedPages_SelectedIndexChanged);
+
             // 
             // listBox_Events
             // 
@@ -166,6 +172,8 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_NextPicture.TabIndex = 11;
             this.button_NextPicture.Text = ">";
             this.button_NextPicture.UseVisualStyleBackColor = true;
+            this.button_NextPicture.Click += new System.EventHandler(this.button_NextPicture_Click);
+
             // 
             // button_PreviousPicture
             // 
@@ -175,6 +183,8 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_PreviousPicture.TabIndex = 12;
             this.button_PreviousPicture.Text = "<";
             this.button_PreviousPicture.UseVisualStyleBackColor = true;
+            this.button_PreviousPicture.Click += new System.EventHandler(this.button_PreviousPicture_Click);
+
             // 
             // button_GetLastPost
             // 
@@ -184,6 +194,8 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_GetLastPost.TabIndex = 13;
             this.button_GetLastPost.Text = "Get Last Post";
             this.button_GetLastPost.UseVisualStyleBackColor = true;
+            this.button_GetLastPost.Click += new System.EventHandler(this.button_GetLastPost_Click);
+
             // 
             // button_GetRandomPost
             // 
@@ -193,6 +205,8 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_GetRandomPost.TabIndex = 14;
             this.button_GetRandomPost.Text = "Get Random Post";
             this.button_GetRandomPost.UseVisualStyleBackColor = true;
+            this.button_GetRandomPost.Click += new System.EventHandler(this.button_GetRandomPost_Click);
+
             // 
             // button_ImFeelingLucky
             // 
@@ -202,15 +216,16 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_ImFeelingLucky.TabIndex = 15;
             this.button_ImFeelingLucky.Text = "I\'m Feeling Lucky";
             this.button_ImFeelingLucky.UseVisualStyleBackColor = true;
+            this.button_ImFeelingLucky.Click += new System.EventHandler(this.button_ImFeelingLucky_Click);
+
             // 
             // label_UserInfo
             // 
             this.label_UserInfo.AutoSize = true;
             this.label_UserInfo.Location = new System.Drawing.Point(312, 461);
             this.label_UserInfo.Name = "label_UserInfo";
-            this.label_UserInfo.Size = new System.Drawing.Size(61, 17);
+            this.label_UserInfo.Size = new System.Drawing.Size(0, 17);
             this.label_UserInfo.TabIndex = 16;
-            this.label_UserInfo.Text = "UserInfo";
             // 
             // button_GetWeather
             // 
@@ -220,15 +235,16 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_GetWeather.TabIndex = 17;
             this.button_GetWeather.Text = "Get Weather";
             this.button_GetWeather.UseVisualStyleBackColor = true;
+            this.button_GetWeather.Click += new System.EventHandler(this.button_GetWeather_Click);
+
             // 
             // label_WeatherInfo
             // 
             this.label_WeatherInfo.AutoSize = true;
             this.label_WeatherInfo.Location = new System.Drawing.Point(636, 511);
             this.label_WeatherInfo.Name = "label_WeatherInfo";
-            this.label_WeatherInfo.Size = new System.Drawing.Size(85, 17);
+            this.label_WeatherInfo.Size = new System.Drawing.Size(0, 17);
             this.label_WeatherInfo.TabIndex = 18;
-            this.label_WeatherInfo.Text = "WeatherInfo";
             // 
             // MainAppWindow
             // 
