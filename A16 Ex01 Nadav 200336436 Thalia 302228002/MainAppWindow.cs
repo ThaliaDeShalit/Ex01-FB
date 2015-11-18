@@ -6,8 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml;
+using System.Net;
 using FacebookWrapper.ObjectModel;
 using FacebookWrapper;
+using Newtonsoft.Json;
 
 namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 {
@@ -17,6 +20,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         private Page m_SelectedPage;
         private Random m_RandomNumberGenerater;
         private bool m_WasImFeelingLuckyPressed = false;
+        private Event m_SelectedEvent;
         
         public MainAppWindow()
         {
@@ -156,8 +160,29 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             m_WasImFeelingLuckyPressed = true;
         }
 
+        private void listBox_Events_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBox_Events.SelectedItems.Count == 1)
+            {
+                m_SelectedEvent = listBox_Events.SelectedItem as Event;
+            }
+        }
+
+
         private void button_GenerateMap_Click(object sender, EventArgs e)
         {
+            string destination = (listBox_Events.SelectedItem as Event).Location;
+            string origin = textBox_Address.Text;
+            string url = string.Format(@"https://maps.googleapis.com/maps/api/distancematrix/json?origins={0}&destinations={1}&key={2}", origin, destination, "AIzaSyDhZ61DrCNA7GBaPJvrDCJ5XWh5I1psBl8");
+
+            Newtonsoft.Json.Linq.JObject jObject;
+
+            using (WebClient wc = new WebClient())
+            {
+                string json = wc.DownloadString(url);
+                jObject = Newtonsoft.Json.Linq.JObject.Parse(json);
+            }
+
             
         }
 

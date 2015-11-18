@@ -184,6 +184,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.listBox_Events.Name = "listBox_Events";
             this.listBox_Events.Size = new System.Drawing.Size(128, 147);
             this.listBox_Events.TabIndex = 9;
+            this.listBox_Events.SelectedIndexChanged += new System.EventHandler(this.listBox_Events_SelectedIndexChanged);
             // 
             // button_GetLastPost
             // 
