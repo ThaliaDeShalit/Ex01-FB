@@ -59,6 +59,7 @@
             this.button_Like.TabIndex = 2;
             this.button_Like.Text = "Like";
             this.button_Like.UseVisualStyleBackColor = true;
+            this.button_Like.Click += new System.EventHandler(this.button_Like_Click);
             // 
             // PostsWindow
             // 

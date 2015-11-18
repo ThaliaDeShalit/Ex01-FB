@@ -60,8 +60,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             fetchLikedPages();
 
             fetchEvents();
-
-            picture_UserPictures.Load(m_LoggedInUser.Pictures.PictureUrl);
         }
 
         private void fetchLikedPages()
@@ -108,16 +106,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
                 MessageBox.Show("Posted! id: " + postedStatus.Id);   
         }
 
-        private void button_NextPicture_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button_PreviousPicture_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void listBox_LikedPages_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBox_LikedPages.SelectedItems.Count == 1)
@@ -148,7 +136,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         {
             if (m_SelectedPage != null)
             {
-                PostsWindow postsWindow = new PostsWindow(m_SelectedPage.Posts[i_Index]);
+                PostsWindow postsWindow = new PostsWindow(m_LoggedInUser, m_SelectedPage.Posts[i_Index]);
                 postsWindow.ShowDialog();
             }
             else
@@ -167,7 +155,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             m_WasImFeelingLuckyPressed = true;
         }
 
-        private void button_GetWeather_Click(object sender, EventArgs e)
+        private void button_GenerateMap_Click(object sender, EventArgs e)
         {
             
         }

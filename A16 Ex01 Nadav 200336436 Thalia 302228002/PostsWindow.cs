@@ -14,12 +14,14 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
     public partial class PostsWindow : Form
     {
         private Post m_Post;
+        private User m_User;
 
-        public PostsWindow(Post i_Post)
+        public PostsWindow(User i_User, Post i_Post)
         {
             InitializeComponent();
 
             m_Post = i_Post;
+            m_User = i_User;
             showText();
             showImage();
         }
@@ -51,6 +53,26 @@ label_PostText.Text = postText;
                 pictureBox_PostPicture.Image = pictureBox_PostPicture.ErrorImage;
 
             }
+        }
+
+        private void button_Like_Click(object sender, EventArgs e)
+        {
+            
+                bool hasLikeSucceded = m_Post.Like();
+                string output;
+
+                if (hasLikeSucceded)
+                {
+                    output = "Liked succefully";
+                }
+                else
+                {
+                    output = "Already liked this post";
+                }
+
+                MessageBox.Show(output);
+            
+            
         }
     }
 }

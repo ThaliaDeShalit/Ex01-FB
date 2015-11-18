@@ -49,18 +49,14 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_Post = new System.Windows.Forms.Button();
             this.listBox_LikedPages = new System.Windows.Forms.ListBox();
             this.listBox_Events = new System.Windows.Forms.ListBox();
-            this.picture_UserPictures = new System.Windows.Forms.PictureBox();
-            this.button_NextPicture = new System.Windows.Forms.Button();
-            this.button_PreviousPicture = new System.Windows.Forms.Button();
             this.button_GetLastPost = new System.Windows.Forms.Button();
             this.button_GetRandomPost = new System.Windows.Forms.Button();
             this.button_ImFeelingLucky = new System.Windows.Forms.Button();
-            this.label_UserInfo = new System.Windows.Forms.Label();
-            this.button_GetWeather = new System.Windows.Forms.Button();
-            this.label_WeatherInfo = new System.Windows.Forms.Label();
+            this.button_GenerateMap = new System.Windows.Forms.Button();
+            this.textBox_Address = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picture_CoverPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_ProfilePicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_UserPictures)).BeginInit();
             this.SuspendLayout();
             // 
             // button_Login
@@ -108,7 +104,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_About.Text = "About";
             this.button_About.UseVisualStyleBackColor = true;
             this.button_About.Click += new System.EventHandler(this.button_About_Click);
-
             // 
             // label_PostStatus
             // 
@@ -145,46 +140,15 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.listBox_LikedPages.Size = new System.Drawing.Size(170, 180);
             this.listBox_LikedPages.TabIndex = 8;
             this.listBox_LikedPages.SelectedIndexChanged += new System.EventHandler(this.listBox_LikedPages_SelectedIndexChanged);
-
             // 
             // listBox_Events
             // 
             this.listBox_Events.FormattingEnabled = true;
             this.listBox_Events.ItemHeight = 16;
-            this.listBox_Events.Location = new System.Drawing.Point(98, 461);
+            this.listBox_Events.Location = new System.Drawing.Point(541, 250);
             this.listBox_Events.Name = "listBox_Events";
             this.listBox_Events.Size = new System.Drawing.Size(170, 180);
             this.listBox_Events.TabIndex = 9;
-            // 
-            // picture_UserPictures
-            // 
-            this.picture_UserPictures.Location = new System.Drawing.Point(596, 250);
-            this.picture_UserPictures.Name = "picture_UserPictures";
-            this.picture_UserPictures.Size = new System.Drawing.Size(170, 180);
-            this.picture_UserPictures.TabIndex = 10;
-            this.picture_UserPictures.TabStop = false;
-            // 
-            // button_NextPicture
-            // 
-            this.button_NextPicture.Location = new System.Drawing.Point(772, 322);
-            this.button_NextPicture.Name = "button_NextPicture";
-            this.button_NextPicture.Size = new System.Drawing.Size(29, 23);
-            this.button_NextPicture.TabIndex = 11;
-            this.button_NextPicture.Text = ">";
-            this.button_NextPicture.UseVisualStyleBackColor = true;
-            this.button_NextPicture.Click += new System.EventHandler(this.button_NextPicture_Click);
-
-            // 
-            // button_PreviousPicture
-            // 
-            this.button_PreviousPicture.Location = new System.Drawing.Point(561, 322);
-            this.button_PreviousPicture.Name = "button_PreviousPicture";
-            this.button_PreviousPicture.Size = new System.Drawing.Size(29, 23);
-            this.button_PreviousPicture.TabIndex = 12;
-            this.button_PreviousPicture.Text = "<";
-            this.button_PreviousPicture.UseVisualStyleBackColor = true;
-            this.button_PreviousPicture.Click += new System.EventHandler(this.button_PreviousPicture_Click);
-
             // 
             // button_GetLastPost
             // 
@@ -195,7 +159,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_GetLastPost.Text = "Get Last Post";
             this.button_GetLastPost.UseVisualStyleBackColor = true;
             this.button_GetLastPost.Click += new System.EventHandler(this.button_GetLastPost_Click);
-
             // 
             // button_GetRandomPost
             // 
@@ -206,7 +169,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_GetRandomPost.Text = "Get Random Post";
             this.button_GetRandomPost.UseVisualStyleBackColor = true;
             this.button_GetRandomPost.Click += new System.EventHandler(this.button_GetRandomPost_Click);
-
             // 
             // button_ImFeelingLucky
             // 
@@ -217,49 +179,44 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_ImFeelingLucky.Text = "I\'m Feeling Lucky";
             this.button_ImFeelingLucky.UseVisualStyleBackColor = true;
             this.button_ImFeelingLucky.Click += new System.EventHandler(this.button_ImFeelingLucky_Click);
-
             // 
-            // label_UserInfo
+            // button_GenerateMap
             // 
-            this.label_UserInfo.AutoSize = true;
-            this.label_UserInfo.Location = new System.Drawing.Point(312, 461);
-            this.label_UserInfo.Name = "label_UserInfo";
-            this.label_UserInfo.Size = new System.Drawing.Size(0, 17);
-            this.label_UserInfo.TabIndex = 16;
+            this.button_GenerateMap.Location = new System.Drawing.Point(753, 349);
+            this.button_GenerateMap.Name = "button_GenerateMap";
+            this.button_GenerateMap.Size = new System.Drawing.Size(130, 60);
+            this.button_GenerateMap.TabIndex = 17;
+            this.button_GenerateMap.Text = "Tell Me When To Leave For The Event";
+            this.button_GenerateMap.UseVisualStyleBackColor = true;
+            this.button_GenerateMap.Click += new System.EventHandler(this.button_GenerateMap_Click);
             // 
-            // button_GetWeather
+            // textBox_Address
             // 
-            this.button_GetWeather.Location = new System.Drawing.Point(596, 461);
-            this.button_GetWeather.Name = "button_GetWeather";
-            this.button_GetWeather.Size = new System.Drawing.Size(170, 23);
-            this.button_GetWeather.TabIndex = 17;
-            this.button_GetWeather.Text = "Get Weather";
-            this.button_GetWeather.UseVisualStyleBackColor = true;
-            this.button_GetWeather.Click += new System.EventHandler(this.button_GetWeather_Click);
-
+            this.textBox_Address.Location = new System.Drawing.Point(753, 283);
+            this.textBox_Address.Name = "textBox_Address";
+            this.textBox_Address.Size = new System.Drawing.Size(130, 22);
+            this.textBox_Address.TabIndex = 18;
             // 
-            // label_WeatherInfo
+            // label1
             // 
-            this.label_WeatherInfo.AutoSize = true;
-            this.label_WeatherInfo.Location = new System.Drawing.Point(636, 511);
-            this.label_WeatherInfo.Name = "label_WeatherInfo";
-            this.label_WeatherInfo.Size = new System.Drawing.Size(0, 17);
-            this.label_WeatherInfo.TabIndex = 18;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(728, 250);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 17);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Enter Your Current Location:";
             // 
             // MainAppWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 653);
-            this.Controls.Add(this.label_WeatherInfo);
-            this.Controls.Add(this.button_GetWeather);
-            this.Controls.Add(this.label_UserInfo);
+            this.ClientSize = new System.Drawing.Size(938, 490);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox_Address);
+            this.Controls.Add(this.button_GenerateMap);
             this.Controls.Add(this.button_ImFeelingLucky);
             this.Controls.Add(this.button_GetRandomPost);
             this.Controls.Add(this.button_GetLastPost);
-            this.Controls.Add(this.button_PreviousPicture);
-            this.Controls.Add(this.button_NextPicture);
-            this.Controls.Add(this.picture_UserPictures);
             this.Controls.Add(this.listBox_Events);
             this.Controls.Add(this.listBox_LikedPages);
             this.Controls.Add(this.button_Post);
@@ -274,7 +231,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.Text = "MainAppWindow";
             ((System.ComponentModel.ISupportInitialize)(this.picture_CoverPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_ProfilePicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_UserPictures)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,15 +248,12 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         private System.Windows.Forms.Button button_Post;
         private System.Windows.Forms.ListBox listBox_LikedPages;
         private System.Windows.Forms.ListBox listBox_Events;
-        private System.Windows.Forms.PictureBox picture_UserPictures;
-        private System.Windows.Forms.Button button_NextPicture;
-        private System.Windows.Forms.Button button_PreviousPicture;
         private System.Windows.Forms.Button button_GetLastPost;
         private System.Windows.Forms.Button button_GetRandomPost;
         private System.Windows.Forms.Button button_ImFeelingLucky;
-        private System.Windows.Forms.Label label_UserInfo;
-        private System.Windows.Forms.Button button_GetWeather;
-        private System.Windows.Forms.Label label_WeatherInfo;
+        private Button button_GenerateMap;
+        private TextBox textBox_Address;
+        private Label label1;
 
 
     }
