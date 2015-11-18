@@ -54,7 +54,8 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         private void fetchUserInfo()
         {
             picture_CoverPhoto.Load(m_LoggedInUser.Cover.SourceURL);
-            picture_ProfilePicture.Load(m_LoggedInUser.PictureLargeURL);
+            picture_ProfilePicture.Load(m_LoggedInUser.PictureNormalURL);
+
             label_UserName.Text = m_LoggedInUser.Name;
 
             fetchLikedPages();
@@ -158,6 +159,20 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         private void button_GenerateMap_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void label_UserName_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void MainAppWindow_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picture_CoverPhoto_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
