@@ -84,7 +84,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.picture_CoverPhoto.Size = new System.Drawing.Size(682, 116);
             this.picture_CoverPhoto.TabIndex = 1;
             this.picture_CoverPhoto.TabStop = false;
-            this.picture_CoverPhoto.Click += new System.EventHandler(this.picture_CoverPhoto_Click);
             // 
             // picture_ProfilePicture
             // 
@@ -113,7 +112,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.label_UserName.TabIndex = 3;
             this.label_UserName.Text = "UserName";
             this.label_UserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_UserName.Click += new System.EventHandler(this.label_UserName_Click);
             // 
             // button_About
             // 
@@ -293,7 +291,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainAppWindow";
             this.Text = "MainAppWindow";
-            this.Load += new System.EventHandler(this.MainAppWindow_Load);
+            //this.Load += new System.EventHandler(this.MainAppWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picture_CoverPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_ProfilePicture)).EndInit();
             this.ResumeLayout(false);

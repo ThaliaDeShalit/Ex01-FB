@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Xml;
 using System.Net;
 using FacebookWrapper.ObjectModel;
 using FacebookWrapper;
@@ -134,7 +133,14 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             {
                 m_SelectedPage = listBox_LikedPages.SelectedItem as Page;
             }
-            getPostFromSelectedPage(m_RandomNumberGenerater.Next(0, m_SelectedPage.Posts.Count));
+            if (m_SelectedPage != null)
+            {
+                getPostFromSelectedPage(m_RandomNumberGenerater.Next(0, m_SelectedPage.Posts.Count));
+            }
+            else
+            {
+                MessageBox.Show("No page was selected");
+            }
         }
 
         private void getPostFromSelectedPage(int i_Index)
@@ -182,21 +188,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
                 string json = wc.DownloadString(url);
                 jObject = Newtonsoft.Json.Linq.JObject.Parse(json);
             }
-
-            
-        }
-
-        private void label_UserName_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void MainAppWindow_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picture_CoverPhoto_Click(object sender, EventArgs e)
-        {
 
         }
     }
