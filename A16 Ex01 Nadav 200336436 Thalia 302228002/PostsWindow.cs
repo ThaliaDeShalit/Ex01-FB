@@ -30,14 +30,15 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         {
             string postText = m_Post.Message;
 
-            if (!string.IsNullOrEmpty(postText)) {
-label_PostText.Text = postText;
+            if (!string.IsNullOrEmpty(postText))
+            {
+                label_PostText.Text = postText;
             }
             else
             {
                 label_PostText.Text = string.Empty;
             }
-            
+
         }
 
         private void showImage()
@@ -57,22 +58,22 @@ label_PostText.Text = postText;
 
         private void button_Like_Click(object sender, EventArgs e)
         {
-            
-                bool hasLikeSucceded = m_Post.Like();
-                string output;
 
-                if (hasLikeSucceded)
-                {
-                    output = "Liked succefully";
-                }
-                else
-                {
-                    output = "Already liked this post";
-                }
+            bool hasLikeSucceded = m_Post.Like();
+            string output;
 
-                MessageBox.Show(output);
-            
-            
+            if (hasLikeSucceded)
+            {
+                output = "Liked succefully";
+            }
+            else
+            {
+                output = "Already liked this post";
+            }
+
+            MessageBox.Show(output);
+
+
         }
     }
 }

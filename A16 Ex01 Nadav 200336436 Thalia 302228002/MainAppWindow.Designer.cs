@@ -54,7 +54,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_ImFeelingLucky = new System.Windows.Forms.Button();
             this.button_GenerateMap = new System.Windows.Forms.Button();
             this.textBox_Address = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_CurrentLocation = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picture_CoverPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_ProfilePicture)).BeginInit();
             this.SuspendLayout();
@@ -90,7 +90,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.picture_ProfilePicture.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.picture_ProfilePicture.Location = new System.Drawing.Point(20, 44);
+            this.picture_ProfilePicture.Location = new System.Drawing.Point(20, 63);
             this.picture_ProfilePicture.Margin = new System.Windows.Forms.Padding(2);
             this.picture_ProfilePicture.Name = "picture_ProfilePicture";
             this.picture_ProfilePicture.Size = new System.Drawing.Size(90, 98);
@@ -104,8 +104,8 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.label_UserName.BackColor = System.Drawing.Color.Transparent;
             this.label_UserName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label_UserName.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label_UserName.ForeColor = System.Drawing.Color.White;
-            this.label_UserName.Location = new System.Drawing.Point(137, 93);
+            this.label_UserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.label_UserName.Location = new System.Drawing.Point(114, 135);
             this.label_UserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_UserName.Name = "label_UserName";
             this.label_UserName.Size = new System.Drawing.Size(121, 25);
@@ -132,17 +132,18 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             // label_PostStatus
             // 
             this.label_PostStatus.AutoSize = true;
-            this.label_PostStatus.Location = new System.Drawing.Point(139, 148);
+            this.label_PostStatus.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label_PostStatus.Location = new System.Drawing.Point(169, 176);
             this.label_PostStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_PostStatus.Name = "label_PostStatus";
-            this.label_PostStatus.Size = new System.Drawing.Size(64, 13);
+            this.label_PostStatus.Size = new System.Drawing.Size(66, 13);
             this.label_PostStatus.TabIndex = 5;
             this.label_PostStatus.Text = "Post Status:";
             this.label_PostStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox_PostStatus
             // 
-            this.textBox_PostStatus.Location = new System.Drawing.Point(207, 145);
+            this.textBox_PostStatus.Location = new System.Drawing.Point(239, 173);
             this.textBox_PostStatus.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_PostStatus.Name = "textBox_PostStatus";
             this.textBox_PostStatus.Size = new System.Drawing.Size(262, 20);
@@ -155,7 +156,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.button_Post.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Post.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.button_Post.ForeColor = System.Drawing.Color.White;
-            this.button_Post.Location = new System.Drawing.Point(477, 145);
+            this.button_Post.Location = new System.Drawing.Point(505, 172);
             this.button_Post.Margin = new System.Windows.Forms.Padding(2);
             this.button_Post.Name = "button_Post";
             this.button_Post.Size = new System.Drawing.Size(56, 20);
@@ -166,6 +167,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             // 
             // listBox_LikedPages
             // 
+            this.listBox_LikedPages.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.listBox_LikedPages.FormattingEnabled = true;
             this.listBox_LikedPages.Location = new System.Drawing.Point(74, 203);
             this.listBox_LikedPages.Margin = new System.Windows.Forms.Padding(2);
@@ -176,6 +178,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             // 
             // listBox_Events
             // 
+            this.listBox_Events.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.listBox_Events.FormattingEnabled = true;
             this.listBox_Events.Location = new System.Drawing.Point(406, 203);
             this.listBox_Events.Margin = new System.Windows.Forms.Padding(2);
@@ -250,21 +253,22 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             // 
             // textBox_Address
             // 
-            this.textBox_Address.Location = new System.Drawing.Point(565, 230);
+            this.textBox_Address.Location = new System.Drawing.Point(565, 223);
             this.textBox_Address.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Address.Name = "textBox_Address";
             this.textBox_Address.Size = new System.Drawing.Size(98, 20);
             this.textBox_Address.TabIndex = 18;
             // 
-            // label1
+            // label_CurrentLocation
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(546, 203);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 13);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Enter Your Current Location:";
+            this.label_CurrentLocation.AutoSize = true;
+            this.label_CurrentLocation.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label_CurrentLocation.Location = new System.Drawing.Point(538, 203);
+            this.label_CurrentLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_CurrentLocation.Name = "label_CurrentLocation";
+            this.label_CurrentLocation.Size = new System.Drawing.Size(145, 13);
+            this.label_CurrentLocation.TabIndex = 19;
+            this.label_CurrentLocation.Text = "Enter Your Current Location:";
             // 
             // MainAppWindow
             // 
@@ -273,7 +277,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             this.ClientSize = new System.Drawing.Size(704, 398);
             this.Controls.Add(this.label_UserName);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_CurrentLocation);
             this.Controls.Add(this.textBox_Address);
             this.Controls.Add(this.button_GenerateMap);
             this.Controls.Add(this.button_ImFeelingLucky);
@@ -291,7 +295,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainAppWindow";
             this.Text = "MainAppWindow";
-            //this.Load += new System.EventHandler(this.MainAppWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picture_CoverPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_ProfilePicture)).EndInit();
             this.ResumeLayout(false);
@@ -316,7 +319,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         private System.Windows.Forms.Button button_ImFeelingLucky;
         private Button button_GenerateMap;
         private TextBox textBox_Address;
-        private Label label1;
+        private Label label_CurrentLocation;
 
 
     }
