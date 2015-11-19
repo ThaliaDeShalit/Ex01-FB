@@ -54,7 +54,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             }
         }
 
-        private void button_Like_Click(object sender, EventArgs e)
+        private void buttonLike_Click(object sender, EventArgs e)
         {
             bool hasLikeSucceded = m_Post.Like();
             string output;

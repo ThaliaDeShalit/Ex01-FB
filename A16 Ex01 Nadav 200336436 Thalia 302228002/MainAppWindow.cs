@@ -17,16 +17,16 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
     public partial class MainAppWindow : Form
     {
         private User m_LoggedInUser;
-        private Random m_RandomNumberGenerater;
+        private Random m_RandomNumberGenerator;
 
         public MainAppWindow()
         {
             InitializeComponent();
 
-            m_RandomNumberGenerater = new Random();
+            m_RandomNumberGenerator = new Random();
         }
 
-        private void button_Login_Click(object sender, EventArgs e)
+        private void buttonLogin_Click(object sender, EventArgs e)
         {
             LoginResult result = FacebookService.Login(
                 "173969972948571",
@@ -95,19 +95,19 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             }
         }
 
-        private void button_About_Click(object sender, EventArgs e)
+        private void buttonAbout_Click(object sender, EventArgs e)
         {
             AboutWindow aboutWindow = new AboutWindow(m_LoggedInUser);
             aboutWindow.ShowDialog();
         }
 
-        private void button_Post_Click(object sender, EventArgs e)
+        private void buttonPost_Click(object sender, EventArgs e)
         {
             Status postedStatus = m_LoggedInUser.PostStatus(textBoxPostStatus.Text);
             MessageBox.Show("Posted! id: " + postedStatus.Id);
         }
 
-        private void button_GetLastPost_Click(object sender, EventArgs e)
+        private void buttonGetLastPost_Click(object sender, EventArgs e)
         {
             if (checkIfPageWasSelected())
             {
@@ -139,12 +139,12 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             return wasPageSelected;
         }
 
-        private void button_GetRandomPost_Click(object sender, EventArgs e)
+        private void buttonGetRandomPost_Click(object sender, EventArgs e)
         {
             if (checkIfPageWasSelected())
             {
                 Page selectedPage = listBoxLikedPages.SelectedItem as Page;
-                int postIndex = m_RandomNumberGenerater.Next(0, selectedPage.Posts.Count);
+                int postIndex = m_RandomNumberGenerator.Next(0, selectedPage.Posts.Count);
                 getPostFromSelectedPage(postIndex, selectedPage);
             }
         }
@@ -155,7 +155,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             postsWindow.ShowDialog();
         }
 
-        private void button_ImFeelingLucky_Click(object sender, EventArgs e)
+        private void buttonImFeelingLucky_Click(object sender, EventArgs e)
         {
             if (listBoxLikedPages.Items.Count == 0)
             {
@@ -163,14 +163,14 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             }
             else
             {
-                int numOfPage = m_RandomNumberGenerater.Next(0, listBoxLikedPages.Items.Count);
+                int numOfPage = m_RandomNumberGenerator.Next(0, listBoxLikedPages.Items.Count);
                 Page randomPage = listBoxLikedPages.Items[numOfPage] as Page;
-                int postIndex = m_RandomNumberGenerater.Next(0, randomPage.Posts.Count);
+                int postIndex = m_RandomNumberGenerator.Next(0, randomPage.Posts.Count);
                 getPostFromSelectedPage(postIndex, randomPage);
             }
         }
 
-        private void button_GenerateMap_Click(object sender, EventArgs e)
+        private void buttonGenerateMap_Click(object sender, EventArgs e)
         {
             if (listBoxEvents.SelectedItems.Count == 1)
             {
@@ -229,7 +229,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             using (WebClient wc = new WebClient())
             {
                 string json = wc.DownloadString(url);
-                parsedJson = Newtonsoft.Json.Linq.JObject.Parse(json);
+                parsedJson = JObject.Parse(json);
             }
             
             //In case the json was not parsed correctly

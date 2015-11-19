@@ -74,7 +74,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.buttonLogin.TabIndex = 0;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
-            this.buttonLogin.Click += new System.EventHandler(this.button_Login_Click);
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // pictureCoverPhoto
             // 
@@ -128,7 +128,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.buttonAbout.TabIndex = 4;
             this.buttonAbout.Text = "About";
             this.buttonAbout.UseVisualStyleBackColor = false;
-            this.buttonAbout.Click += new System.EventHandler(this.button_About_Click);
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
             // labelPostStatus
             // 
@@ -164,7 +164,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.buttonPost.TabIndex = 7;
             this.buttonPost.Text = "Post";
             this.buttonPost.UseVisualStyleBackColor = false;
-            this.buttonPost.Click += new System.EventHandler(this.button_Post_Click);
+            this.buttonPost.Click += new System.EventHandler(this.buttonPost_Click);
             // 
             // listBoxLikedPages
             // 
@@ -200,7 +200,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.buttonGetLastPost.TabIndex = 13;
             this.buttonGetLastPost.Text = "Get Last Post";
             this.buttonGetLastPost.UseVisualStyleBackColor = false;
-            this.buttonGetLastPost.Click += new System.EventHandler(this.button_GetLastPost_Click);
+            this.buttonGetLastPost.Click += new System.EventHandler(this.buttonGetLastPost_Click);
             // 
             // buttonGetRandomPost
             // 
@@ -216,7 +216,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.buttonGetRandomPost.TabIndex = 14;
             this.buttonGetRandomPost.Text = "Get Random Post";
             this.buttonGetRandomPost.UseVisualStyleBackColor = false;
-            this.buttonGetRandomPost.Click += new System.EventHandler(this.button_GetRandomPost_Click);
+            this.buttonGetRandomPost.Click += new System.EventHandler(this.buttonGetRandomPost_Click);
             // 
             // buttonImFeelingLucky
             // 
@@ -232,7 +232,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.buttonImFeelingLucky.TabIndex = 15;
             this.buttonImFeelingLucky.Text = "I\'m Feeling Lucky";
             this.buttonImFeelingLucky.UseVisualStyleBackColor = false;
-            this.buttonImFeelingLucky.Click += new System.EventHandler(this.button_ImFeelingLucky_Click);
+            this.buttonImFeelingLucky.Click += new System.EventHandler(this.buttonImFeelingLucky_Click);
             // 
             // buttonGenerateMap
             // 
@@ -248,7 +248,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.buttonGenerateMap.TabIndex = 17;
             this.buttonGenerateMap.Text = "Tell Me When To Leave For The Event";
             this.buttonGenerateMap.UseVisualStyleBackColor = false;
-            this.buttonGenerateMap.Click += new System.EventHandler(this.button_GenerateMap_Click);
+            this.buttonGenerateMap.Click += new System.EventHandler(this.buttonGenerateMap_Click);
             // 
             // textBoxAddress
             // 
