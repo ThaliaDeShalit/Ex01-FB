@@ -56,6 +56,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
         private void fetchUserInfo()
         {
+            FacebookService.s_CollectionLimit = 1000;
             picture_CoverPhoto.Load(m_LoggedInUser.Cover.SourceURL);
             picture_ProfilePicture.Load(m_LoggedInUser.PictureNormalURL);
 
@@ -177,7 +178,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
         private void button_GenerateMap_Click(object sender, EventArgs e)
         {
-            string destination = (listBox_Events.SelectedItem as Event).Location;
+            string destination = (listBox_Events.SelectedItem as Event).Place.Name;
             string origin = textBox_Address.Text;
             string url = string.Format(@"https://maps.googleapis.com/maps/api/distancematrix/json?origins={0}&destinations={1}&key={2}", origin, destination, "AIzaSyDhZ61DrCNA7GBaPJvrDCJ5XWh5I1psBl8");
 
@@ -188,7 +189,16 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
                 string json = wc.DownloadString(url);
                 jObject = Newtonsoft.Json.Linq.JObject.Parse(json);
             }
+            
+            DateTime startTime = (DateTime)m_SelectedEvent.StartTime;
+            int temp;
+            Console.WriteLine(jObject);
+            string duration = jObject["rows"][0]["elements"][0]["duration"]["value"].ToString();
+            string durationn = (string)jObject["rows"][0]["elements"][0]["duration"]["text"];
+            bool tempo = int.TryParse(duration, out temp);
+            DateTime timeToLeave = startTime.AddSeconds(-temp);
 
+            MessageBox.Show(string.Format(@"You need to leave at {0} to get to the event on time", timeToLeave.ToLongTimeString()));
         }
     }
 }
