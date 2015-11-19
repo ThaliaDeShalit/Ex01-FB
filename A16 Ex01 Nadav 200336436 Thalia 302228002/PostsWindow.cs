@@ -30,8 +30,9 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         {
             string postText = m_Post.Message;
 
-            if (!string.IsNullOrEmpty(postText)) {
-label_PostText.Text = postText;
+            if (!string.IsNullOrEmpty(postText)) 
+            {
+                label_PostText.Text = postText;
             }
             else
             {
@@ -57,7 +58,6 @@ label_PostText.Text = postText;
 
         private void button_Like_Click(object sender, EventArgs e)
         {
-            
                 bool hasLikeSucceded = m_Post.Like();
                 string output;
 
@@ -71,8 +71,6 @@ label_PostText.Text = postText;
                 }
 
                 MessageBox.Show(output);
-            
-            
         }
     }
 }
