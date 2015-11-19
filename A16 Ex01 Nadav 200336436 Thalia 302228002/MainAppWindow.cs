@@ -55,9 +55,9 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         private void fetchUserInfo()
         {
             FacebookService.s_CollectionLimit = 99;
-            picture_CoverPhoto.Load(m_LoggedInUser.Cover.SourceURL);
-            picture_ProfilePicture.Load(m_LoggedInUser.PictureNormalURL);
-            label_UserName.Text = m_LoggedInUser.Name;
+            pictureCoverPhoto.Load(m_LoggedInUser.Cover.SourceURL);
+            pictureProfilePicture.Load(m_LoggedInUser.PictureNormalURL);
+            labelUserName.Text = m_LoggedInUser.Name;
 
             fetchLikedPages();
             fetchEvents();
@@ -65,12 +65,12 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
         private void fetchLikedPages()
         {
-            listBox_LikedPages.Items.Clear();
-            listBox_LikedPages.DisplayMember = "Name";
+            listBoxLikedPages.Items.Clear();
+            listBoxLikedPages.DisplayMember = "Name";
 
             foreach (Page page in m_LoggedInUser.LikedPages)
             {
-                listBox_LikedPages.Items.Add(page);
+                listBoxLikedPages.Items.Add(page);
             }
 
             if (m_LoggedInUser.LikedPages.Count == 0)
@@ -81,12 +81,12 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
         private void fetchEvents()
         {
-            listBox_Events.Items.Clear();
-            listBox_Events.DisplayMember = "Name";
+            listBoxEvents.Items.Clear();
+            listBoxEvents.DisplayMember = "Name";
 
             foreach (Event userEvent in m_LoggedInUser.Events)
             {
-                listBox_Events.Items.Add(userEvent);
+                listBoxEvents.Items.Add(userEvent);
             }
 
             if (m_LoggedInUser.Events.Count == 0)
@@ -103,7 +103,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
         private void button_Post_Click(object sender, EventArgs e)
         {
-            Status postedStatus = m_LoggedInUser.PostStatus(textBox_PostStatus.Text);
+            Status postedStatus = m_LoggedInUser.PostStatus(textBoxPostStatus.Text);
             MessageBox.Show("Posted! id: " + postedStatus.Id);
         }
 
@@ -111,7 +111,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         {
             if (checkIfPageWasSelected())
             {
-                getPostFromSelectedPage(0, listBox_LikedPages.SelectedItem as Page);
+                getPostFromSelectedPage(0, listBoxLikedPages.SelectedItem as Page);
             }
         }
 
@@ -119,15 +119,15 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         {
             bool wasPageSelected = false;
 
-            if (listBox_LikedPages.Items.Count == 0)
+            if (listBoxLikedPages.Items.Count == 0)
             {
                 MessageBox.Show("User has no liked pages");
             }
-            else if (listBox_LikedPages.SelectedItems.Count == 1)
+            else if (listBoxLikedPages.SelectedItems.Count == 1)
             {
                 wasPageSelected = true;
             }
-            else if (listBox_LikedPages.SelectedItems.Count > 1)
+            else if (listBoxLikedPages.SelectedItems.Count > 1)
             {
                 MessageBox.Show("Too many pages were selected");
             }
@@ -143,7 +143,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         {
             if (checkIfPageWasSelected())
             {
-                Page selectedPage = listBox_LikedPages.SelectedItem as Page;
+                Page selectedPage = listBoxLikedPages.SelectedItem as Page;
                 int postIndex = m_RandomNumberGenerater.Next(0, selectedPage.Posts.Count);
                 getPostFromSelectedPage(postIndex, selectedPage);
             }
@@ -158,14 +158,14 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
         private void button_ImFeelingLucky_Click(object sender, EventArgs e)
         {
-            if (listBox_LikedPages.Items.Count == 0)
+            if (listBoxLikedPages.Items.Count == 0)
             {
                 MessageBox.Show("User has no liked pages");
             }
             else
             {
-                int numOfPage = m_RandomNumberGenerater.Next(0, listBox_LikedPages.Items.Count);
-                Page randomPage = listBox_LikedPages.Items[numOfPage] as Page;
+                int numOfPage = m_RandomNumberGenerater.Next(0, listBoxLikedPages.Items.Count);
+                Page randomPage = listBoxLikedPages.Items[numOfPage] as Page;
                 int postIndex = m_RandomNumberGenerater.Next(0, randomPage.Posts.Count);
                 getPostFromSelectedPage(postIndex, randomPage);
             }
@@ -173,13 +173,13 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
         private void button_GenerateMap_Click(object sender, EventArgs e)
         {
-            if (listBox_Events.SelectedItems.Count == 1)
+            if (listBoxEvents.SelectedItems.Count == 1)
             {
-                Event selectedEvent = listBox_Events.SelectedItem as Event;
+                Event selectedEvent = listBoxEvents.SelectedItem as Event;
                 string destination = selectedEvent.Place.Name;
                 if (!string.IsNullOrEmpty(destination))
                 {
-                    string origin = textBox_Address.Text;
+                    string origin = textBoxAddress.Text;
                     if (!string.IsNullOrEmpty(origin))
                     {
                         DateTime eventStartTime = (DateTime)selectedEvent.StartTime;

@@ -32,11 +32,11 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
             if (!string.IsNullOrEmpty(postText)) 
             {
-                label_PostText.Text = postText;
+                labelPostText.Text = postText;
             }
             else
             {
-                label_PostText.Text = string.Empty;
+                labelPostText.Text = string.Empty;
             }
             
         }
@@ -47,11 +47,11 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
             if (!string.IsNullOrEmpty(postPicture))
             {
-                pictureBox_PostPicture.Load(postPicture);
+                pictureBoxPostPicture.Load(postPicture);
             }
             else
             {
-                pictureBox_PostPicture.Image = pictureBox_PostPicture.ErrorImage;
+                pictureBoxPostPicture.Image = pictureBoxPostPicture.ErrorImage;
 
             }
         }

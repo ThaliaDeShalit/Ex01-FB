@@ -28,50 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label_PostText = new System.Windows.Forms.Label();
-            this.pictureBox_PostPicture = new System.Windows.Forms.PictureBox();
-            this.button_Like = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_PostPicture)).BeginInit();
+            this.labelPostText = new System.Windows.Forms.Label();
+            this.pictureBoxPostPicture = new System.Windows.Forms.PictureBox();
+            this.buttonLike = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPostPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // label_PostText
+            // labelPostText
             // 
-            this.label_PostText.AutoSize = true;
-            this.label_PostText.Location = new System.Drawing.Point(105, 25);
-            this.label_PostText.Name = "label_PostText";
-            this.label_PostText.Size = new System.Drawing.Size(63, 17);
-            this.label_PostText.TabIndex = 0;
-            this.label_PostText.Text = "PostText";
+            this.labelPostText.AutoSize = true;
+            this.labelPostText.Location = new System.Drawing.Point(105, 25);
+            this.labelPostText.Name = "labelPostText";
+            this.labelPostText.Size = new System.Drawing.Size(63, 17);
+            this.labelPostText.TabIndex = 0;
+            this.labelPostText.Text = "PostText";
             // 
-            // pictureBox_PostPicture
+            // pictureBoxPostPicture
             // 
-            this.pictureBox_PostPicture.Location = new System.Drawing.Point(42, 66);
-            this.pictureBox_PostPicture.Name = "pictureBox_PostPicture";
-            this.pictureBox_PostPicture.Size = new System.Drawing.Size(201, 117);
-            this.pictureBox_PostPicture.TabIndex = 1;
-            this.pictureBox_PostPicture.TabStop = false;
+            this.pictureBoxPostPicture.Location = new System.Drawing.Point(42, 66);
+            this.pictureBoxPostPicture.Name = "pictureBoxPostPicture";
+            this.pictureBoxPostPicture.Size = new System.Drawing.Size(201, 117);
+            this.pictureBoxPostPicture.TabIndex = 1;
+            this.pictureBoxPostPicture.TabStop = false;
             // 
-            // button_Like
+            // buttonLike
             // 
-            this.button_Like.Location = new System.Drawing.Point(105, 206);
-            this.button_Like.Name = "button_Like";
-            this.button_Like.Size = new System.Drawing.Size(75, 23);
-            this.button_Like.TabIndex = 2;
-            this.button_Like.Text = "Like";
-            this.button_Like.UseVisualStyleBackColor = true;
-            this.button_Like.Click += new System.EventHandler(this.button_Like_Click);
+            this.buttonLike.Location = new System.Drawing.Point(105, 206);
+            this.buttonLike.Name = "buttonLike";
+            this.buttonLike.Size = new System.Drawing.Size(75, 23);
+            this.buttonLike.TabIndex = 2;
+            this.buttonLike.Text = "Like";
+            this.buttonLike.UseVisualStyleBackColor = true;
+            this.buttonLike.Click += new System.EventHandler(this.button_Like_Click);
             // 
             // PostsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 253);
-            this.Controls.Add(this.button_Like);
-            this.Controls.Add(this.pictureBox_PostPicture);
-            this.Controls.Add(this.label_PostText);
+            this.Controls.Add(this.buttonLike);
+            this.Controls.Add(this.pictureBoxPostPicture);
+            this.Controls.Add(this.labelPostText);
             this.Name = "PostsWindow";
             this.Text = "PostsWindow";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_PostPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPostPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -79,8 +79,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label_PostText;
-        private System.Windows.Forms.PictureBox pictureBox_PostPicture;
-        private System.Windows.Forms.Button button_Like;
+        private System.Windows.Forms.Label labelPostText;
+        private System.Windows.Forms.PictureBox pictureBoxPostPicture;
+        private System.Windows.Forms.Button buttonLike;
     }
 }
