@@ -13,7 +13,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 {
     public partial class AboutWindow : Form
     {
-        User m_LoggedInUser;
+        private User m_LoggedInUser;
         
         public AboutWindow(User i_FacebookUser)
         {
@@ -26,7 +26,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
             showEducations();
             showHometown();            
-            
         }
 
         private void showBio()
@@ -101,6 +100,5 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
                 labelUserHometown.Text = "No hometown to show";
             }
         }
-
     }
 }

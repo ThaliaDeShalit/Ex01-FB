@@ -38,7 +38,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             {
                 labelPostText.Text = string.Empty;
             }
-
         }
 
         private void showImage()
@@ -52,7 +51,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             else
             {
                 pictureBoxPostPicture.Image = pictureBoxPostPicture.ErrorImage;
-
             }
         }
 

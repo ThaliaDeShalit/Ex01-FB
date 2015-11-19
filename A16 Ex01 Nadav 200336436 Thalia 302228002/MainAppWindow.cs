@@ -9,8 +9,8 @@ using System.Windows.Forms;
 using System.Net;
 using FacebookWrapper.ObjectModel;
 using FacebookWrapper;
-//using Newtonsoft.Json;
-//using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 {
@@ -153,7 +153,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         {
             PostsWindow postsWindow = new PostsWindow(m_LoggedInUser, i_SelectedPage.Posts[i_Index]);
             postsWindow.ShowDialog();
-
         }
 
         private void button_ImFeelingLucky_Click(object sender, EventArgs e)
@@ -173,80 +172,80 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
         private void button_GenerateMap_Click(object sender, EventArgs e)
         {
-        //    if (listBoxEvents.SelectedItems.Count == 1)
-        //    {
-        //        Event selectedEvent = listBoxEvents.SelectedItem as Event;
-        //        string destination = selectedEvent.Place.Name;
-        //        if (!string.IsNullOrEmpty(destination))
-        //        {
-        //            string origin = textBoxAddress.Text;
-        //            if (!string.IsNullOrEmpty(origin))
-        //            {
-        //                DateTime eventStartTime = (DateTime)selectedEvent.StartTime;
+            if (listBoxEvents.SelectedItems.Count == 1)
+            {
+                Event selectedEvent = listBoxEvents.SelectedItem as Event;
+                string destination = selectedEvent.Place.Name;
+                if (!string.IsNullOrEmpty(destination))
+                {
+                    string origin = textBoxAddress.Text;
+                    if (!string.IsNullOrEmpty(origin))
+                    {
+                        DateTime eventStartTime = (DateTime)selectedEvent.StartTime;
 
-        //                if (eventStartTime != null)
-        //                {
-        //                    DateTime? timeToLeaveForEvent = whenToLeaveForEvent(origin, destination, eventStartTime);
+                        if (eventStartTime != null)
+                        {
+                            DateTime? timeToLeaveForEvent = whenToLeaveForEvent(origin, destination, eventStartTime);
 
-        //                    if (timeToLeaveForEvent != null)
-        //                    {
-        //                        MessageBox.Show(string.Format(@"You need to leave at {0} to get to the event on time", ((DateTime)timeToLeaveForEvent).ToLongTimeString()));
-        //                    }
-        //                    else
-        //                    {
-        //                        MessageBox.Show("something went wrong");
-        //                    }
-        //                }
-        //                else
-        //                {
-        //                    MessageBox.Show("Event has no start time");
-        //                }
-        //            }
-        //            else
-        //            {
-        //                MessageBox.Show("you must enter an address");
-        //            }
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Event has no location");
-        //        }
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("please select a single event");
-        //    }
-            
+                            if (timeToLeaveForEvent != null)
+                            {
+                                MessageBox.Show(string.Format(@"You need to leave at {0} to get to the event on time", ((DateTime)timeToLeaveForEvent).ToLongTimeString()));
+                            }
+                            else
+                            {
+                                MessageBox.Show("something went wrong");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Event has no start time");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("you must enter an address");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Event has no location");
+                }
+            }
+            else
+            {
+                MessageBox.Show("please select a single event");
+            }
         }
 
-        //private DateTime? whenToLeaveForEvent(string i_Origin, string i_Destination, DateTime i_TimeToArrive)
-        //{
-        //    DateTime? timeToLeave = null;
+        private DateTime? whenToLeaveForEvent(string i_Origin, string i_Destination, DateTime i_TimeToArrive)
+        {
+            DateTime? timeToLeave = null;
             
-        //    string url = string.Format(@"https://maps.googleapis.com/maps/api/distancematrix/json?origins={0}&destinations={1}&key={2}", i_Origin, i_Destination, "AIzaSyDhZ61DrCNA7GBaPJvrDCJ5XWh5I1psBl8");
+            string url = string.Format(@"https://maps.googleapis.com/maps/api/distancematrix/json?origins={0}&destinations={1}&key={2}", i_Origin, i_Destination, "AIzaSyDhZ61DrCNA7GBaPJvrDCJ5XWh5I1psBl8");
 
-        //    JObject parsedJson;
+            JObject parsedJson;
 
-        //    using (WebClient wc = new WebClient())
-        //    {
-        //        string json = wc.DownloadString(url);
-        //        parsedJson = Newtonsoft.Json.Linq.JObject.Parse(json);
-        //    }
+            using (WebClient wc = new WebClient())
+            {
+                string json = wc.DownloadString(url);
+                parsedJson = Newtonsoft.Json.Linq.JObject.Parse(json);
+            }
             
-        //    //In case the json was not parsed correctly
-        //    try
-        //    {
-        //        int travelDurationInSeconds;
-        //        string duration = parsedJson["rows"][0]["elements"][0]["duration"]["value"].ToString();
-        //        bool temporaryBoolForParsingPurposes = int.TryParse(duration, out travelDurationInSeconds);
-        //        timeToLeave = i_TimeToArrive.AddSeconds(-travelDurationInSeconds);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        MessageBox.Show(e.ToString());
-        //    }
+            //In case the json was not parsed correctly
 
-        //    return timeToLeave;
-        //}
+            try
+            {
+                int travelDurationInSeconds;
+                string duration = parsedJson["rows"][0]["elements"][0]["duration"]["value"].ToString();
+                bool temporaryBoolForParsingPurposes = int.TryParse(duration, out travelDurationInSeconds);
+                timeToLeave = i_TimeToArrive.AddSeconds(-travelDurationInSeconds);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+
+            return timeToLeave;
+        }
     }
 }

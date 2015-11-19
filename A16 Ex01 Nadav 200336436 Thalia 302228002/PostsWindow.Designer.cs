@@ -1,6 +1,6 @@
 ﻿namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 {
-    partial class PostsWindow
+    public partial class PostsWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -17,6 +17,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 

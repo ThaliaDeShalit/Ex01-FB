@@ -1,6 +1,6 @@
 ﻿namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 {
-    partial class AboutWindow
+    public partial class AboutWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -17,6 +17,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 

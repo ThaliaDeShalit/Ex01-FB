@@ -11,7 +11,7 @@ using FacebookWrapper;
 
 namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 {
-    partial class MainAppWindow
+    public partial class MainAppWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
