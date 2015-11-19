@@ -14,7 +14,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
     internal partial class AboutWindow : Form
     {
         private User m_LoggedInUser;
-
+        
         internal AboutWindow(User i_FacebookUser)
         {
             InitializeComponent();
