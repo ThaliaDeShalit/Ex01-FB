@@ -36,7 +36,7 @@
             this.labelUserHometown = new System.Windows.Forms.Label();
             this.labelUserEducation = new System.Windows.Forms.Label();
             this.labelAbout = new System.Windows.Forms.Label();
-            this.textBoxBio = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelHometown
@@ -92,7 +92,7 @@
             this.labelUserBirthday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelUserBirthday.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.labelUserBirthday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
-            this.labelUserBirthday.Location = new System.Drawing.Point(221, 252);
+            this.labelUserBirthday.Location = new System.Drawing.Point(235, 254);
             this.labelUserBirthday.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUserBirthday.Name = "labelUserBirthday";
             this.labelUserBirthday.Size = new System.Drawing.Size(116, 23);
@@ -123,7 +123,7 @@
             this.labelUserEducation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelUserEducation.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.labelUserEducation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
-            this.labelUserEducation.Location = new System.Drawing.Point(218, 353);
+            this.labelUserEducation.Location = new System.Drawing.Point(225, 353);
             this.labelUserEducation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUserEducation.Name = "labelUserEducation";
             this.labelUserEducation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -145,21 +145,21 @@
             this.labelAbout.TabIndex = 8;
             this.labelAbout.Text = "Bio:";
             // 
-            // textBoxBio
+            // textBox1
             // 
-            this.textBoxBio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxBio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            this.textBoxBio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBio.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.textBoxBio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
-            this.textBoxBio.Location = new System.Drawing.Point(11, 37);
-            this.textBoxBio.Multiline = true;
-            this.textBoxBio.Name = "textBoxBio";
-            this.textBoxBio.ReadOnly = true;
-            this.textBoxBio.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBoxBio.Size = new System.Drawing.Size(340, 200);
-            this.textBoxBio.TabIndex = 9;
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.textBox1.Location = new System.Drawing.Point(11, 37);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBox1.Size = new System.Drawing.Size(340, 200);
+            this.textBox1.TabIndex = 9;
             // 
             // AboutWindow
             // 
@@ -167,7 +167,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             this.ClientSize = new System.Drawing.Size(362, 385);
-            this.Controls.Add(this.textBoxBio);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelAbout);
             this.Controls.Add(this.labelUserEducation);
             this.Controls.Add(this.labelUserHometown);
@@ -192,6 +192,6 @@
         private System.Windows.Forms.Label labelUserHometown;
         private System.Windows.Forms.Label labelUserEducation;
         private System.Windows.Forms.Label labelAbout;
-        private System.Windows.Forms.TextBox textBoxBio;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
