@@ -34,11 +34,11 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             
             if (!string.IsNullOrEmpty(aboutUser))
             {
-                labelUserAbout.Text = aboutUser;
+                textBoxBio.Text = aboutUser;
             }
             else
             {
-                labelUserAbout.Text = "No bio to show";
+                textBoxBio.Text = "No bio to show";
             }
         }
 
