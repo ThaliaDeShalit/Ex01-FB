@@ -35,11 +35,11 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             
             if (!string.IsNullOrEmpty(aboutUser))
             {
-                label_UserAbout.Text = aboutUser;
+                labelUserAbout.Text = aboutUser;
             }
             else
             {
-                label_UserAbout.Text = "No bio to show";
+                labelUserAbout.Text = "No bio to show";
             }
         }
 
@@ -49,11 +49,11 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
             if (!string.IsNullOrEmpty(userBirthday))
             {
-                label_UserBirthday.Text = userBirthday;
+                labelUserBirthday.Text = userBirthday;
             }
             else
             {
-                label_UserBirthday.Text = "No birthday to show";
+                labelUserBirthday.Text = "No birthday to show";
             }
         }
 
@@ -85,7 +85,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
                 educations = "No education to show";
             }
 
-            label_UserEducation.Text = educations;
+            labelUserEducation.Text = educations;
         }
 
         private void showHometown()
@@ -94,11 +94,11 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
             if (userHometown != null)
             {
-                label_UserHometown.Text = userHometown.Name;
+                labelUserHometown.Text = userHometown.Name;
             }
             else
             {
-                label_UserHometown.Text = "No hometown to show";
+                labelUserHometown.Text = "No hometown to show";
             }
         }
 

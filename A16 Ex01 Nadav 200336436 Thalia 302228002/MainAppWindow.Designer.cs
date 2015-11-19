@@ -39,236 +39,234 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
         /// </summary>
         private void InitializeComponent()
         {
-            this.button_Login = new System.Windows.Forms.Button();
-            this.picture_CoverPhoto = new System.Windows.Forms.PictureBox();
-            this.picture_ProfilePicture = new System.Windows.Forms.PictureBox();
-            this.label_UserName = new System.Windows.Forms.Label();
-            this.button_About = new System.Windows.Forms.Button();
-            this.label_PostStatus = new System.Windows.Forms.Label();
-            this.textBox_PostStatus = new System.Windows.Forms.TextBox();
-            this.button_Post = new System.Windows.Forms.Button();
-            this.listBox_LikedPages = new System.Windows.Forms.ListBox();
-            this.listBox_Events = new System.Windows.Forms.ListBox();
-            this.button_GetLastPost = new System.Windows.Forms.Button();
-            this.button_GetRandomPost = new System.Windows.Forms.Button();
-            this.button_ImFeelingLucky = new System.Windows.Forms.Button();
-            this.button_GenerateMap = new System.Windows.Forms.Button();
-            this.textBox_Address = new System.Windows.Forms.TextBox();
-            this.label_CurrentLocation = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_CoverPhoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_ProfilePicture)).BeginInit();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.pictureCoverPhoto = new System.Windows.Forms.PictureBox();
+            this.pictureProfilePicture = new System.Windows.Forms.PictureBox();
+            this.labelUserName = new System.Windows.Forms.Label();
+            this.buttonAbout = new System.Windows.Forms.Button();
+            this.labelPostStatus = new System.Windows.Forms.Label();
+            this.textBoxPostStatus = new System.Windows.Forms.TextBox();
+            this.buttonPost = new System.Windows.Forms.Button();
+            this.listBoxLikedPages = new System.Windows.Forms.ListBox();
+            this.listBoxEvents = new System.Windows.Forms.ListBox();
+            this.buttonGetLastPost = new System.Windows.Forms.Button();
+            this.buttonGetRandomPost = new System.Windows.Forms.Button();
+            this.buttonImFeelingLucky = new System.Windows.Forms.Button();
+            this.buttonGenerateMap = new System.Windows.Forms.Button();
+            this.textBoxAddress = new System.Windows.Forms.TextBox();
+            this.labelCurrentLocation = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureCoverPhoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureProfilePicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // button_Login
+            // buttonLogin
             // 
-            this.button_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            this.button_Login.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
-            this.button_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Login.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
-            this.button_Login.Location = new System.Drawing.Point(586, 20);
-            this.button_Login.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Login.Name = "button_Login";
-            this.button_Login.Size = new System.Drawing.Size(94, 24);
-            this.button_Login.TabIndex = 0;
-            this.button_Login.Text = "Login";
-            this.button_Login.UseVisualStyleBackColor = false;
-            this.button_Login.Click += new System.EventHandler(this.button_Login_Click);
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            this.buttonLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogin.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.buttonLogin.Location = new System.Drawing.Point(586, 20);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(94, 24);
+            this.buttonLogin.TabIndex = 0;
+            this.buttonLogin.Text = "Login";
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.button_Login_Click);
             // 
-            // picture_CoverPhoto
+            // pictureCoverPhoto
             // 
-            this.picture_CoverPhoto.Location = new System.Drawing.Point(9, 10);
-            this.picture_CoverPhoto.Margin = new System.Windows.Forms.Padding(2);
-            this.picture_CoverPhoto.MinimumSize = new System.Drawing.Size(682, 116);
-            this.picture_CoverPhoto.Name = "picture_CoverPhoto";
-            this.picture_CoverPhoto.Size = new System.Drawing.Size(682, 116);
-            this.picture_CoverPhoto.TabIndex = 1;
-            this.picture_CoverPhoto.TabStop = false;
+            this.pictureCoverPhoto.Location = new System.Drawing.Point(9, 10);
+            this.pictureCoverPhoto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureCoverPhoto.MinimumSize = new System.Drawing.Size(682, 116);
+            this.pictureCoverPhoto.Name = "pictureCoverPhoto";
+            this.pictureCoverPhoto.Size = new System.Drawing.Size(682, 116);
+            this.pictureCoverPhoto.TabIndex = 1;
+            this.pictureCoverPhoto.TabStop = false;
             // 
-            // picture_ProfilePicture
+            // pictureProfilePicture
             // 
-            this.picture_ProfilePicture.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pictureProfilePicture.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.picture_ProfilePicture.Location = new System.Drawing.Point(20, 63);
-            this.picture_ProfilePicture.Margin = new System.Windows.Forms.Padding(2);
-            this.picture_ProfilePicture.Name = "picture_ProfilePicture";
-            this.picture_ProfilePicture.Size = new System.Drawing.Size(90, 98);
-            this.picture_ProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picture_ProfilePicture.TabIndex = 2;
-            this.picture_ProfilePicture.TabStop = false;
+            this.pictureProfilePicture.Location = new System.Drawing.Point(23, 73);
+            this.pictureProfilePicture.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureProfilePicture.Name = "pictureProfilePicture";
+            this.pictureProfilePicture.Size = new System.Drawing.Size(68, 80);
+            this.pictureProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureProfilePicture.TabIndex = 2;
+            this.pictureProfilePicture.TabStop = false;
             // 
-            // label_UserName
+            // labelUserName
             // 
-            this.label_UserName.AutoSize = true;
-            this.label_UserName.BackColor = System.Drawing.Color.Transparent;
-            this.label_UserName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_UserName.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label_UserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
-            this.label_UserName.Location = new System.Drawing.Point(114, 135);
-            this.label_UserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_UserName.Name = "label_UserName";
-            this.label_UserName.Size = new System.Drawing.Size(121, 25);
-            this.label_UserName.TabIndex = 3;
-            this.label_UserName.Text = "UserName";
-            this.label_UserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelUserName.AutoSize = true;
+            this.labelUserName.BackColor = System.Drawing.Color.Transparent;
+            this.labelUserName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelUserName.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.labelUserName.Location = new System.Drawing.Point(95, 128);
+            this.labelUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelUserName.Name = "labelUserName";
+            this.labelUserName.Size = new System.Drawing.Size(121, 25);
+            this.labelUserName.TabIndex = 3;
+            this.labelUserName.Text = "UserName";
+            this.labelUserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button_About
+            // buttonAbout
             // 
-            this.button_About.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            this.button_About.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
-            this.button_About.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_About.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button_About.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
-            this.button_About.Location = new System.Drawing.Point(586, 94);
-            this.button_About.Margin = new System.Windows.Forms.Padding(2);
-            this.button_About.Name = "button_About";
-            this.button_About.Size = new System.Drawing.Size(94, 24);
-            this.button_About.TabIndex = 4;
-            this.button_About.Text = "About";
-            this.button_About.UseVisualStyleBackColor = false;
-            this.button_About.Click += new System.EventHandler(this.button_About_Click);
+            this.buttonAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            this.buttonAbout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.buttonAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAbout.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.buttonAbout.Location = new System.Drawing.Point(586, 93);
+            this.buttonAbout.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAbout.Name = "buttonAbout";
+            this.buttonAbout.Size = new System.Drawing.Size(94, 24);
+            this.buttonAbout.TabIndex = 4;
+            this.buttonAbout.Text = "About";
+            this.buttonAbout.UseVisualStyleBackColor = false;
+            this.buttonAbout.Click += new System.EventHandler(this.button_About_Click);
             // 
-            // label_PostStatus
+            // labelPostStatus
             // 
-            this.label_PostStatus.AutoSize = true;
-            this.label_PostStatus.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label_PostStatus.Location = new System.Drawing.Point(169, 176);
-            this.label_PostStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_PostStatus.Name = "label_PostStatus";
-            this.label_PostStatus.Size = new System.Drawing.Size(66, 13);
-            this.label_PostStatus.TabIndex = 5;
-            this.label_PostStatus.Text = "Post Status:";
-            this.label_PostStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelPostStatus.AutoSize = true;
+            this.labelPostStatus.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelPostStatus.Location = new System.Drawing.Point(150, 167);
+            this.labelPostStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPostStatus.Name = "labelPostStatus";
+            this.labelPostStatus.Size = new System.Drawing.Size(66, 13);
+            this.labelPostStatus.TabIndex = 5;
+            this.labelPostStatus.Text = "Post Status:";
+            this.labelPostStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox_PostStatus
+            // textBoxPostStatus
             // 
-            this.textBox_PostStatus.Location = new System.Drawing.Point(239, 173);
-            this.textBox_PostStatus.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_PostStatus.Name = "textBox_PostStatus";
-            this.textBox_PostStatus.Size = new System.Drawing.Size(262, 20);
-            this.textBox_PostStatus.TabIndex = 6;
+            this.textBoxPostStatus.Location = new System.Drawing.Point(220, 167);
+            this.textBoxPostStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPostStatus.Name = "textBoxPostStatus";
+            this.textBoxPostStatus.Size = new System.Drawing.Size(198, 20);
+            this.textBoxPostStatus.TabIndex = 6;
             // 
-            // button_Post
+            // buttonPost
             // 
-            this.button_Post.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(105)))), ((int)(((byte)(162)))));
-            this.button_Post.FlatAppearance.BorderSize = 0;
-            this.button_Post.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Post.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button_Post.ForeColor = System.Drawing.Color.White;
-            this.button_Post.Location = new System.Drawing.Point(505, 172);
-            this.button_Post.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Post.Name = "button_Post";
-            this.button_Post.Size = new System.Drawing.Size(56, 20);
-            this.button_Post.TabIndex = 7;
-            this.button_Post.Text = "Post";
-            this.button_Post.UseVisualStyleBackColor = false;
-            this.button_Post.Click += new System.EventHandler(this.button_Post_Click);
+            this.buttonPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(105)))), ((int)(((byte)(162)))));
+            this.buttonPost.FlatAppearance.BorderSize = 0;
+            this.buttonPost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPost.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonPost.ForeColor = System.Drawing.Color.White;
+            this.buttonPost.Location = new System.Drawing.Point(431, 167);
+            this.buttonPost.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonPost.Name = "buttonPost";
+            this.buttonPost.Size = new System.Drawing.Size(42, 20);
+            this.buttonPost.TabIndex = 7;
+            this.buttonPost.Text = "Post";
+            this.buttonPost.UseVisualStyleBackColor = false;
+            this.buttonPost.Click += new System.EventHandler(this.button_Post_Click);
             // 
-            // listBox_LikedPages
+            // listBoxLikedPages
             // 
-            this.listBox_LikedPages.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.listBox_LikedPages.FormattingEnabled = true;
-            this.listBox_LikedPages.Location = new System.Drawing.Point(74, 203);
-            this.listBox_LikedPages.Margin = new System.Windows.Forms.Padding(2);
-            this.listBox_LikedPages.Name = "listBox_LikedPages";
-            this.listBox_LikedPages.Size = new System.Drawing.Size(128, 147);
-            this.listBox_LikedPages.TabIndex = 8;
-            this.listBox_LikedPages.SelectedIndexChanged += new System.EventHandler(this.listBox_LikedPages_SelectedIndexChanged);
+            this.listBoxLikedPages.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.listBoxLikedPages.FormattingEnabled = true;
+            this.listBoxLikedPages.Location = new System.Drawing.Point(15, 207);
+            this.listBoxLikedPages.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxLikedPages.Name = "listBoxLikedPages";
+            this.listBoxLikedPages.Size = new System.Drawing.Size(122, 173);
+            this.listBoxLikedPages.TabIndex = 8;
             // 
-            // listBox_Events
+            // listBoxEvents
             // 
-            this.listBox_Events.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.listBox_Events.FormattingEnabled = true;
-            this.listBox_Events.Location = new System.Drawing.Point(406, 203);
-            this.listBox_Events.Margin = new System.Windows.Forms.Padding(2);
-            this.listBox_Events.Name = "listBox_Events";
-            this.listBox_Events.Size = new System.Drawing.Size(128, 147);
-            this.listBox_Events.TabIndex = 9;
-            this.listBox_Events.SelectedIndexChanged += new System.EventHandler(this.listBox_Events_SelectedIndexChanged);
+            this.listBoxEvents.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.listBoxEvents.FormattingEnabled = true;
+            this.listBoxEvents.Location = new System.Drawing.Point(392, 204);
+            this.listBoxEvents.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxEvents.Name = "listBoxEvents";
+            this.listBoxEvents.Size = new System.Drawing.Size(130, 173);
+            this.listBoxEvents.TabIndex = 9;
             // 
-            // button_GetLastPost
+            // buttonGetLastPost
             // 
-            this.button_GetLastPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(105)))), ((int)(((byte)(162)))));
-            this.button_GetLastPost.FlatAppearance.BorderSize = 0;
-            this.button_GetLastPost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_GetLastPost.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button_GetLastPost.ForeColor = System.Drawing.Color.White;
-            this.button_GetLastPost.Location = new System.Drawing.Point(227, 223);
-            this.button_GetLastPost.Margin = new System.Windows.Forms.Padding(2);
-            this.button_GetLastPost.Name = "button_GetLastPost";
-            this.button_GetLastPost.Size = new System.Drawing.Size(117, 24);
-            this.button_GetLastPost.TabIndex = 13;
-            this.button_GetLastPost.Text = "Get Last Post";
-            this.button_GetLastPost.UseVisualStyleBackColor = false;
-            this.button_GetLastPost.Click += new System.EventHandler(this.button_GetLastPost_Click);
+            this.buttonGetLastPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(105)))), ((int)(((byte)(162)))));
+            this.buttonGetLastPost.FlatAppearance.BorderSize = 0;
+            this.buttonGetLastPost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGetLastPost.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonGetLastPost.ForeColor = System.Drawing.Color.White;
+            this.buttonGetLastPost.Location = new System.Drawing.Point(153, 207);
+            this.buttonGetLastPost.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonGetLastPost.Name = "buttonGetLastPost";
+            this.buttonGetLastPost.Size = new System.Drawing.Size(116, 20);
+            this.buttonGetLastPost.TabIndex = 13;
+            this.buttonGetLastPost.Text = "Get Last Post";
+            this.buttonGetLastPost.UseVisualStyleBackColor = false;
+            this.buttonGetLastPost.Click += new System.EventHandler(this.button_GetLastPost_Click);
             // 
-            // button_GetRandomPost
+            // buttonGetRandomPost
             // 
-            this.button_GetRandomPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(105)))), ((int)(((byte)(162)))));
-            this.button_GetRandomPost.FlatAppearance.BorderSize = 0;
-            this.button_GetRandomPost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_GetRandomPost.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button_GetRandomPost.ForeColor = System.Drawing.Color.White;
-            this.button_GetRandomPost.Location = new System.Drawing.Point(227, 253);
-            this.button_GetRandomPost.Margin = new System.Windows.Forms.Padding(2);
-            this.button_GetRandomPost.Name = "button_GetRandomPost";
-            this.button_GetRandomPost.Size = new System.Drawing.Size(117, 24);
-            this.button_GetRandomPost.TabIndex = 14;
-            this.button_GetRandomPost.Text = "Get Random Post";
-            this.button_GetRandomPost.UseVisualStyleBackColor = false;
-            this.button_GetRandomPost.Click += new System.EventHandler(this.button_GetRandomPost_Click);
+            this.buttonGetRandomPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(105)))), ((int)(((byte)(162)))));
+            this.buttonGetRandomPost.FlatAppearance.BorderSize = 0;
+            this.buttonGetRandomPost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGetRandomPost.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonGetRandomPost.ForeColor = System.Drawing.Color.White;
+            this.buttonGetRandomPost.Location = new System.Drawing.Point(153, 244);
+            this.buttonGetRandomPost.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonGetRandomPost.Name = "buttonGetRandomPost";
+            this.buttonGetRandomPost.Size = new System.Drawing.Size(116, 20);
+            this.buttonGetRandomPost.TabIndex = 14;
+            this.buttonGetRandomPost.Text = "Get Random Post";
+            this.buttonGetRandomPost.UseVisualStyleBackColor = false;
+            this.buttonGetRandomPost.Click += new System.EventHandler(this.button_GetRandomPost_Click);
             // 
-            // button_ImFeelingLucky
+            // buttonImFeelingLucky
             // 
-            this.button_ImFeelingLucky.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(105)))), ((int)(((byte)(162)))));
-            this.button_ImFeelingLucky.FlatAppearance.BorderSize = 0;
-            this.button_ImFeelingLucky.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ImFeelingLucky.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button_ImFeelingLucky.ForeColor = System.Drawing.Color.White;
-            this.button_ImFeelingLucky.Location = new System.Drawing.Point(227, 284);
-            this.button_ImFeelingLucky.Margin = new System.Windows.Forms.Padding(2);
-            this.button_ImFeelingLucky.Name = "button_ImFeelingLucky";
-            this.button_ImFeelingLucky.Size = new System.Drawing.Size(117, 24);
-            this.button_ImFeelingLucky.TabIndex = 15;
-            this.button_ImFeelingLucky.Text = "I\'m Feeling Lucky";
-            this.button_ImFeelingLucky.UseVisualStyleBackColor = false;
-            this.button_ImFeelingLucky.Click += new System.EventHandler(this.button_ImFeelingLucky_Click);
+            this.buttonImFeelingLucky.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(105)))), ((int)(((byte)(162)))));
+            this.buttonImFeelingLucky.FlatAppearance.BorderSize = 0;
+            this.buttonImFeelingLucky.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonImFeelingLucky.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonImFeelingLucky.ForeColor = System.Drawing.Color.White;
+            this.buttonImFeelingLucky.Location = new System.Drawing.Point(153, 277);
+            this.buttonImFeelingLucky.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonImFeelingLucky.Name = "buttonImFeelingLucky";
+            this.buttonImFeelingLucky.Size = new System.Drawing.Size(116, 21);
+            this.buttonImFeelingLucky.TabIndex = 15;
+            this.buttonImFeelingLucky.Text = "I\'m Feeling Lucky";
+            this.buttonImFeelingLucky.UseVisualStyleBackColor = false;
+            this.buttonImFeelingLucky.Click += new System.EventHandler(this.button_ImFeelingLucky_Click);
             // 
-            // button_GenerateMap
+            // buttonGenerateMap
             // 
-            this.button_GenerateMap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(105)))), ((int)(((byte)(162)))));
-            this.button_GenerateMap.FlatAppearance.BorderSize = 0;
-            this.button_GenerateMap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_GenerateMap.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button_GenerateMap.ForeColor = System.Drawing.Color.White;
-            this.button_GenerateMap.Location = new System.Drawing.Point(565, 284);
-            this.button_GenerateMap.Margin = new System.Windows.Forms.Padding(2);
-            this.button_GenerateMap.Name = "button_GenerateMap";
-            this.button_GenerateMap.Size = new System.Drawing.Size(98, 49);
-            this.button_GenerateMap.TabIndex = 17;
-            this.button_GenerateMap.Text = "Tell Me When To Leave For The Event";
-            this.button_GenerateMap.UseVisualStyleBackColor = false;
-            this.button_GenerateMap.Click += new System.EventHandler(this.button_GenerateMap_Click);
+            this.buttonGenerateMap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(105)))), ((int)(((byte)(162)))));
+            this.buttonGenerateMap.FlatAppearance.BorderSize = 0;
+            this.buttonGenerateMap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGenerateMap.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonGenerateMap.ForeColor = System.Drawing.Color.White;
+            this.buttonGenerateMap.Location = new System.Drawing.Point(538, 266);
+            this.buttonGenerateMap.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonGenerateMap.Name = "buttonGenerateMap";
+            this.buttonGenerateMap.Size = new System.Drawing.Size(142, 42);
+            this.buttonGenerateMap.TabIndex = 17;
+            this.buttonGenerateMap.Text = "Tell Me When To Leave For The Event";
+            this.buttonGenerateMap.UseVisualStyleBackColor = false;
+            this.buttonGenerateMap.Click += new System.EventHandler(this.button_GenerateMap_Click);
             // 
-            // textBox_Address
+            // textBoxAddress
             // 
-            this.textBox_Address.Location = new System.Drawing.Point(565, 223);
-            this.textBox_Address.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_Address.Name = "textBox_Address";
-            this.textBox_Address.Size = new System.Drawing.Size(98, 20);
-            this.textBox_Address.TabIndex = 18;
+            this.textBoxAddress.Location = new System.Drawing.Point(538, 230);
+            this.textBoxAddress.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(142, 20);
+            this.textBoxAddress.TabIndex = 18;
             // 
-            // label_CurrentLocation
+            // labelCurrentLocation
             // 
-            this.label_CurrentLocation.AutoSize = true;
-            this.label_CurrentLocation.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label_CurrentLocation.Location = new System.Drawing.Point(538, 203);
-            this.label_CurrentLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_CurrentLocation.Name = "label_CurrentLocation";
-            this.label_CurrentLocation.Size = new System.Drawing.Size(145, 13);
-            this.label_CurrentLocation.TabIndex = 19;
-            this.label_CurrentLocation.Text = "Enter Your Current Location:";
+            this.labelCurrentLocation.AutoSize = true;
+            this.labelCurrentLocation.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelCurrentLocation.Location = new System.Drawing.Point(535, 204);
+            this.labelCurrentLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCurrentLocation.Name = "labelCurrentLocation";
+            this.labelCurrentLocation.Size = new System.Drawing.Size(145, 13);
+            this.labelCurrentLocation.TabIndex = 19;
+            this.labelCurrentLocation.Text = "Enter Your Current Location:";
             // 
             // MainAppWindow
             // 
@@ -276,27 +274,27 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             this.ClientSize = new System.Drawing.Size(704, 398);
-            this.Controls.Add(this.label_UserName);
-            this.Controls.Add(this.label_CurrentLocation);
-            this.Controls.Add(this.textBox_Address);
-            this.Controls.Add(this.button_GenerateMap);
-            this.Controls.Add(this.button_ImFeelingLucky);
-            this.Controls.Add(this.button_GetRandomPost);
-            this.Controls.Add(this.button_GetLastPost);
-            this.Controls.Add(this.listBox_Events);
-            this.Controls.Add(this.listBox_LikedPages);
-            this.Controls.Add(this.button_Post);
-            this.Controls.Add(this.textBox_PostStatus);
-            this.Controls.Add(this.label_PostStatus);
-            this.Controls.Add(this.button_About);
-            this.Controls.Add(this.picture_ProfilePicture);
-            this.Controls.Add(this.button_Login);
-            this.Controls.Add(this.picture_CoverPhoto);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Controls.Add(this.labelUserName);
+            this.Controls.Add(this.labelCurrentLocation);
+            this.Controls.Add(this.textBoxAddress);
+            this.Controls.Add(this.buttonGenerateMap);
+            this.Controls.Add(this.buttonImFeelingLucky);
+            this.Controls.Add(this.buttonGetRandomPost);
+            this.Controls.Add(this.buttonGetLastPost);
+            this.Controls.Add(this.listBoxEvents);
+            this.Controls.Add(this.listBoxLikedPages);
+            this.Controls.Add(this.buttonPost);
+            this.Controls.Add(this.textBoxPostStatus);
+            this.Controls.Add(this.labelPostStatus);
+            this.Controls.Add(this.buttonAbout);
+            this.Controls.Add(this.pictureProfilePicture);
+            this.Controls.Add(this.buttonLogin);
+            this.Controls.Add(this.pictureCoverPhoto);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainAppWindow";
             this.Text = "MainAppWindow";
-            ((System.ComponentModel.ISupportInitialize)(this.picture_CoverPhoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_ProfilePicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureCoverPhoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureProfilePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,23 +302,21 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
         #endregion
 
-        private System.Windows.Forms.Button button_Login;
-        private System.Windows.Forms.PictureBox picture_CoverPhoto;
-        private System.Windows.Forms.PictureBox picture_ProfilePicture;
-        private System.Windows.Forms.Label label_UserName;
-        private System.Windows.Forms.Button button_About;
-        private System.Windows.Forms.Label label_PostStatus;
-        private System.Windows.Forms.TextBox textBox_PostStatus;
-        private System.Windows.Forms.Button button_Post;
-        private System.Windows.Forms.ListBox listBox_LikedPages;
-        private System.Windows.Forms.ListBox listBox_Events;
-        private System.Windows.Forms.Button button_GetLastPost;
-        private System.Windows.Forms.Button button_GetRandomPost;
-        private System.Windows.Forms.Button button_ImFeelingLucky;
-        private Button button_GenerateMap;
-        private TextBox textBox_Address;
-        private Label label_CurrentLocation;
-
-
+        private System.Windows.Forms.Button buttonLogin;
+        private System.Windows.Forms.PictureBox pictureCoverPhoto;
+        private System.Windows.Forms.PictureBox pictureProfilePicture;
+        private System.Windows.Forms.Label labelUserName;
+        private System.Windows.Forms.Button buttonAbout;
+        private System.Windows.Forms.Label labelPostStatus;
+        private System.Windows.Forms.TextBox textBoxPostStatus;
+        private System.Windows.Forms.Button buttonPost;
+        private System.Windows.Forms.ListBox listBoxLikedPages;
+        private System.Windows.Forms.ListBox listBoxEvents;
+        private System.Windows.Forms.Button buttonGetLastPost;
+        private System.Windows.Forms.Button buttonGetRandomPost;
+        private System.Windows.Forms.Button buttonImFeelingLucky;
+        private Button buttonGenerateMap;
+        private TextBox textBoxAddress;
+        private Label labelCurrentLocation;
     }
 }
