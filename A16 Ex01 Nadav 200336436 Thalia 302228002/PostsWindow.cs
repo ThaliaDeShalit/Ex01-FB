@@ -32,11 +32,11 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
             if (!string.IsNullOrEmpty(postText)) 
             {
-                labelPostText.Text = postText;
+                textBoxPostText.Text = postText;
             }
             else
             {
-                labelPostText.Text = string.Empty;
+                textBoxPostText.Text = string.Empty;
             }
         }
 
