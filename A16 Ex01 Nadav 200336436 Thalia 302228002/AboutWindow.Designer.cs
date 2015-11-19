@@ -44,10 +44,13 @@
             this.labelUserAbout.AutoSize = true;
             this.labelUserAbout.BackColor = System.Drawing.Color.Transparent;
             this.labelUserAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelUserAbout.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelUserAbout.Location = new System.Drawing.Point(84, 59);
+            this.labelUserAbout.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelUserAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.labelUserAbout.Location = new System.Drawing.Point(9, 34);
+            this.labelUserAbout.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUserAbout.Name = "labelUserAbout";
-            this.labelUserAbout.Size = new System.Drawing.Size(157, 33);
+            this.labelUserAbout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelUserAbout.Size = new System.Drawing.Size(109, 25);
             this.labelUserAbout.TabIndex = 0;
             this.labelUserAbout.Text = "AboutUser";
             // 
@@ -57,9 +60,11 @@
             this.labelHometown.BackColor = System.Drawing.Color.Transparent;
             this.labelHometown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelHometown.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelHometown.Location = new System.Drawing.Point(12, 171);
+            this.labelHometown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.labelHometown.Location = new System.Drawing.Point(9, 146);
+            this.labelHometown.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHometown.Name = "labelHometown";
-            this.labelHometown.Size = new System.Drawing.Size(174, 33);
+            this.labelHometown.Size = new System.Drawing.Size(135, 25);
             this.labelHometown.TabIndex = 1;
             this.labelHometown.Text = "Hometown:";
             // 
@@ -69,9 +74,11 @@
             this.labelBirthday.BackColor = System.Drawing.Color.Transparent;
             this.labelBirthday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelBirthday.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelBirthday.Location = new System.Drawing.Point(12, 136);
+            this.labelBirthday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.labelBirthday.Location = new System.Drawing.Point(9, 110);
+            this.labelBirthday.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelBirthday.Name = "labelBirthday";
-            this.labelBirthday.Size = new System.Drawing.Size(141, 33);
+            this.labelBirthday.Size = new System.Drawing.Size(109, 25);
             this.labelBirthday.TabIndex = 2;
             this.labelBirthday.Text = "Birthday:";
             // 
@@ -81,9 +88,11 @@
             this.labelEducation.BackColor = System.Drawing.Color.Transparent;
             this.labelEducation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelEducation.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelEducation.Location = new System.Drawing.Point(12, 204);
+            this.labelEducation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.labelEducation.Location = new System.Drawing.Point(9, 179);
+            this.labelEducation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEducation.Name = "labelEducation";
-            this.labelEducation.Size = new System.Drawing.Size(159, 33);
+            this.labelEducation.Size = new System.Drawing.Size(124, 25);
             this.labelEducation.TabIndex = 4;
             this.labelEducation.Text = "Education:";
             // 
@@ -92,10 +101,12 @@
             this.labelUserBirthday.AutoSize = true;
             this.labelUserBirthday.BackColor = System.Drawing.Color.Transparent;
             this.labelUserBirthday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelUserBirthday.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelUserBirthday.Location = new System.Drawing.Point(178, 136);
+            this.labelUserBirthday.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelUserBirthday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.labelUserBirthday.Location = new System.Drawing.Point(173, 110);
+            this.labelUserBirthday.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUserBirthday.Name = "labelUserBirthday";
-            this.labelUserBirthday.Size = new System.Drawing.Size(193, 33);
+            this.labelUserBirthday.Size = new System.Drawing.Size(132, 25);
             this.labelUserBirthday.TabIndex = 5;
             this.labelUserBirthday.Text = "UserBirthday";
             // 
@@ -104,10 +115,13 @@
             this.labelUserHometown.AutoSize = true;
             this.labelUserHometown.BackColor = System.Drawing.Color.Transparent;
             this.labelUserHometown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelUserHometown.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelUserHometown.Location = new System.Drawing.Point(178, 169);
+            this.labelUserHometown.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelUserHometown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.labelUserHometown.Location = new System.Drawing.Point(173, 146);
+            this.labelUserHometown.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUserHometown.Name = "labelUserHometown";
-            this.labelUserHometown.Size = new System.Drawing.Size(226, 33);
+            this.labelUserHometown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelUserHometown.Size = new System.Drawing.Size(154, 25);
             this.labelUserHometown.TabIndex = 6;
             this.labelUserHometown.Text = "UserHometown";
             // 
@@ -116,10 +130,13 @@
             this.labelUserEducation.AutoSize = true;
             this.labelUserEducation.BackColor = System.Drawing.Color.Transparent;
             this.labelUserEducation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelUserEducation.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelUserEducation.Location = new System.Drawing.Point(178, 202);
+            this.labelUserEducation.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelUserEducation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.labelUserEducation.Location = new System.Drawing.Point(173, 179);
+            this.labelUserEducation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUserEducation.Name = "labelUserEducation";
-            this.labelUserEducation.Size = new System.Drawing.Size(211, 33);
+            this.labelUserEducation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelUserEducation.Size = new System.Drawing.Size(146, 25);
             this.labelUserEducation.TabIndex = 7;
             this.labelUserEducation.Text = "UserEducation";
             // 
@@ -129,17 +146,20 @@
             this.labelAbout.BackColor = System.Drawing.Color.Transparent;
             this.labelAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelAbout.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelAbout.Location = new System.Drawing.Point(84, 20);
+            this.labelAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
+            this.labelAbout.Location = new System.Drawing.Point(9, 9);
+            this.labelAbout.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAbout.Name = "labelAbout";
-            this.labelAbout.Size = new System.Drawing.Size(69, 33);
+            this.labelAbout.Size = new System.Drawing.Size(53, 25);
             this.labelAbout.TabIndex = 8;
             this.labelAbout.Text = "Bio:";
             // 
             // AboutWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 303);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            this.ClientSize = new System.Drawing.Size(372, 246);
             this.Controls.Add(this.labelAbout);
             this.Controls.Add(this.labelUserEducation);
             this.Controls.Add(this.labelUserHometown);
@@ -148,8 +168,9 @@
             this.Controls.Add(this.labelBirthday);
             this.Controls.Add(this.labelHometown);
             this.Controls.Add(this.labelUserAbout);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AboutWindow";
-            this.Text = "AboutWindow";
+            this.Text = "About";
             this.ResumeLayout(false);
             this.PerformLayout();
 

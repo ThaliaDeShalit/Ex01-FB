@@ -42,7 +42,7 @@
             this.labelPostText.Location = new System.Drawing.Point(29, 20);
             this.labelPostText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPostText.MaximumSize = new System.Drawing.Size(100, 0);
-            this.labelPostText.Name = "label_PostText";
+            this.labelPostText.Name = "labelPostText";
             this.labelPostText.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelPostText.Size = new System.Drawing.Size(50, 13);
             this.labelPostText.TabIndex = 0;
@@ -52,7 +52,7 @@
             // 
             this.pictureBoxPostPicture.Location = new System.Drawing.Point(32, 54);
             this.pictureBoxPostPicture.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxPostPicture.Name = "pictureBox_PostPicture";
+            this.pictureBoxPostPicture.Name = "pictureBoxPostPicture";
             this.pictureBoxPostPicture.Size = new System.Drawing.Size(151, 151);
             this.pictureBoxPostPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxPostPicture.TabIndex = 1;
@@ -67,7 +67,7 @@
             this.buttonLike.ForeColor = System.Drawing.Color.White;
             this.buttonLike.Location = new System.Drawing.Point(72, 209);
             this.buttonLike.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonLike.Name = "button_Like";
+            this.buttonLike.Name = "buttonLike";
             this.buttonLike.Size = new System.Drawing.Size(56, 19);
             this.buttonLike.TabIndex = 2;
             this.buttonLike.Text = "Like";
@@ -85,10 +85,11 @@
             this.Controls.Add(this.labelPostText);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PostsWindow";
-            this.Text = "PostsWindow";
+            this.Text = "Post";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPostPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

@@ -215,6 +215,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             {
                 MessageBox.Show("please select a single event");
             }
+            
         }
 
         private DateTime? whenToLeaveForEvent(string i_Origin, string i_Destination, DateTime i_TimeToArrive)
@@ -232,7 +233,6 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             }
             
             //In case the json was not parsed correctly
-
             try
             {
                 int travelDurationInSeconds;

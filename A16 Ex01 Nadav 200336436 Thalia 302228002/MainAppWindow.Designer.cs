@@ -68,7 +68,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.buttonLogin.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.buttonLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(86)))), ((int)(((byte)(101)))));
             this.buttonLogin.Location = new System.Drawing.Point(586, 20);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(94, 24);
             this.buttonLogin.TabIndex = 0;
@@ -79,7 +79,7 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             // pictureCoverPhoto
             // 
             this.pictureCoverPhoto.Location = new System.Drawing.Point(9, 10);
-            this.pictureCoverPhoto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureCoverPhoto.Margin = new System.Windows.Forms.Padding(2);
             this.pictureCoverPhoto.MinimumSize = new System.Drawing.Size(682, 116);
             this.pictureCoverPhoto.Name = "pictureCoverPhoto";
             this.pictureCoverPhoto.Size = new System.Drawing.Size(682, 116);
@@ -291,9 +291,9 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
             this.Controls.Add(this.pictureProfilePicture);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.pictureCoverPhoto);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainAppWindow";
-            this.Text = "MainAppWindow";
+            this.Text = "Facebook 2.0";
             ((System.ComponentModel.ISupportInitialize)(this.pictureCoverPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureProfilePicture)).EndInit();
             this.ResumeLayout(false);
