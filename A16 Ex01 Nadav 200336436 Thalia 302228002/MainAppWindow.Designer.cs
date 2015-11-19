@@ -11,7 +11,7 @@ using FacebookWrapper;
 
 namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 {
-    public partial class MainAppWindow
+    internal partial class MainAppWindow
     {
         /// <summary>
         /// Required designer variable.

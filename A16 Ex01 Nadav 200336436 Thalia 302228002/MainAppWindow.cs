@@ -14,12 +14,12 @@ using Newtonsoft.Json.Linq;
 
 namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 {
-    public partial class MainAppWindow : Form
+    internal partial class MainAppWindow : Form
     {
         private User m_LoggedInUser;
         private Random m_RandomNumberGenerator;
 
-        public MainAppWindow()
+        internal MainAppWindow()
         {
             InitializeComponent();
 
@@ -189,7 +189,8 @@ namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 
                             if (timeToLeaveForEvent != null)
                             {
-                                MessageBox.Show(string.Format(@"You need to leave at {0} to get to the event on time", ((DateTime)timeToLeaveForEvent).ToLongTimeString()));
+                                DateTime timeToLeave = (DateTime)timeToLeaveForEvent;
+                                MessageBox.Show(string.Format(@"You need to leave at {0} on the {1} to get to the event on time", timeToLeave.ToLongTimeString(), timeToLeave.ToShortDateString()));
                             }
                             else
                             {

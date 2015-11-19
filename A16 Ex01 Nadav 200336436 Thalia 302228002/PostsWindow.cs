@@ -11,12 +11,12 @@ using FacebookWrapper;
 
 namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 {
-    public partial class PostsWindow : Form
+    internal partial class PostsWindow : Form
     {
         private Post m_Post;
         private User m_User;
 
-        public PostsWindow(User i_User, Post i_Post)
+        internal PostsWindow(User i_User, Post i_Post)
         {
             InitializeComponent();
 

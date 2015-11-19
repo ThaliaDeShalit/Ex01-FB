@@ -1,6 +1,6 @@
 ﻿namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 {
-    public partial class PostsWindow
+    internal partial class PostsWindow
     {
         /// <summary>
         /// Required designer variable.

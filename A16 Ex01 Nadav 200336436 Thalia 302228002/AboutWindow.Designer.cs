@@ -1,6 +1,6 @@
 ﻿namespace A16_Ex01_Nadav_200336436_Thalia_302228002
 {
-    public partial class AboutWindow
+    internal partial class AboutWindow
     {
         /// <summary>
         /// Required designer variable.
